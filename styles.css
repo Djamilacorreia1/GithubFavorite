@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    font-size: 62.5%;
+}
+#app{
+
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.5rem 0;
+}
+header h1{
+
+    font-size: 2rem;
+    color: #303030;
+    text-transform: uppercase;
+}
+body{
+
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+.sr-only{
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.searchFavorites{
+
+    display: flex;
+}
+.searchFavorites input{
+
+    width: 18.5rem;
+    height: 3.2rem;
+    padding: 0 10px;
+    border-radius: .4rem 0 0 .4rem;
+    border: 1px solid #ccc;
+}
+.searchFavorites input:focus{
+
+    outline: 1px solid #42D3FF;
+}
+.searchFavorites button{ 
+
+    background-color: #42D3FF;
+    padding: 0 10px;
+    border: none;
+    border-radius: 0 .4rem .4rem 0;
+}
+table{
+
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem  rgba(0,0,0,0.3);
+}
+table *{
+
+    font-size: 1.4rem;
+    color: #303030;
+}
+body *{
+
+    font-family: 'Poppins', sans-serif;
+}
+table th{
+
+    text-align: left;
+    padding: 1.5rem;
+    background-color: #42D3FF;
+}
+table td{
+
+    padding: 1.5rem;
+    text-align: left;
+}
+.users img{
+
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.users a{
+
+    text-decoration: none;
+}
+.users a p:nth-of-type(1){
+
+    font-weight: bold;
+}
+td.users{
+
+    display: flex;
+    gap: 1rem;
+    
+}
+.remove button{
+
+    background: transparent;
+    border: none;
+    color: red;
+}
+table tr:nth-child(odd){
+
+    background-color: #ddd;
+}
+
+table tr:nth-child(even){
+
+    background-color: #eee;
+}
+table th:nth-of-type(1){
+
+   border-top-left-radius: .4rem;
+}
+
+table th:nth-of-type(4){
+
+    border-top-right-radius: .4rem;
+ }
